@@ -21,3 +21,5 @@ Liquidity is almost always similar to the TVL, but for example in pool No1 (NEAR
 But in almost all other cases number is similar and we have same result as on https://vfat.tools/aurora/auroraswap/ .
 
 Price is taken from CoinGecko API.
+
+Inspired by https://medium.com/@MoonVault/what-influences-apr-apy-and-why-you-should-not-use-it-to-calculate-your-yield-9db77cfc664c
