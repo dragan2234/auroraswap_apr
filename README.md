@@ -1,18 +1,28 @@
 # auroraswap_apr
 
-This is a small app which calculates APR of the auroraswap pools. Put your pool index number in the line number 16.
+
+## In order to run this app you need to have nodejs installed on your machine.
+
+then run:
+
+`node index.js`
+
+And open http://localhost:8000
+
+
+## This is a small app which calculates APR of the auroraswap pools. Put your pool index number in the line number 16.
 
 This still needs futher development as numbers are not 100% correct.
 
 Formula is:
 
-AnnualTokenEmission = BRLPerBlock / 1e18 * NumOfSecondsInaYear(31556926) / BlockTime(1.1seconds)
+`AnnualTokenEmission = BRLPerBlock / 1e18 * NumOfSecondsInaYear(31556926) / BlockTime(1.1seconds)
 
 PoolEmissionShare = allocPointOfThePool / totalAllocPoints
 
 PoolRewardValuePerYear = AnnualTokenEmission * PoolEmissionShare * BRLprice;
 
-APR = PoolRewardValuePerYear / Liquidity * 100
+APR = PoolRewardValuePerYear / Liquidity * 100`
 
 Liquidity is taken from DexScreener API. And this is the number which is probably not correct but I had troubles getting the TVL from the pools.
 
